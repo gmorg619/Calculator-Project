@@ -7,10 +7,10 @@ def calculate
   operation = gets.chomp
   puts "Please enter the second number."
   number_2 = gets.chomp.to_i
-    if operation == "+" || operation == "plus" || operation == "add"
+  if operation == "+" || operation == "plus" || operation == "add" || operation =="additon"
       return number_1 + number_2
 
-    elsif operation == "-" || operation == "minus" || operation == "subtract"
+  elsif operation == "-" || operation == "minus" || operation == "subtract"|| operation == "subtraction"
       return number_1 - number_2
 
     elsif operation == "*" || operation == "times" || operation == "multiplication" || operation == "multiply"
@@ -29,7 +29,7 @@ def calculate
 
     elsif operation == "root" || operation == "√" || operation == "sqrt" || operation == "rt"
       if number_2 % 3 == 0 || number_2 % 7 == 0 || number_2 % 11 == 0
-        return (number_1 ** (1/number_2.to_f)).to_i + 1   
+        return (number_1 ** (1/number_2.end)).to_i + 1   
       else
         return number_1 ** (1/number_2.to_f)
       end
